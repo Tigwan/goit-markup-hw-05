@@ -54,6 +54,7 @@ img {
   padding-left: 15px;
   padding-right: 15px;
 }
+/* ======== / ========= */
 
 /* HEADER */
 .page-header {
@@ -62,6 +63,10 @@ img {
   background-color: #ffffff;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   z-index: 5;
+}
+
+main {
+  padding-top: 72px;
 }
 
 .main-nav {
@@ -298,6 +303,8 @@ border-color: var(--color-primary-brand);
   height: 4px;
   background-color: #4D5AE5;
   border-radius: 2px;
+  position: absolute;
+  bottom: 0px;
 }
 
 .link-underline {
@@ -314,6 +321,8 @@ border-color: var(--color-primary-brand);
   height: 4px;
   background-color: #4D5AE5;
   border-radius: 2px;
+  position: absolute;
+  bottom: 0px;
 }
 
 .link:hover,
@@ -345,7 +354,7 @@ border-color: var(--color-primary-brand);
   color: var(--color-primary-brand);
 }
 
-/* HERO */
+/* ======== HERO ======== */
 .hero {
   background-color: var(--color-dark);
   background-image: linear-gradient(to right, 
@@ -430,13 +439,12 @@ border-color: var(--color-primary-brand);
   cursor: pointer;
   padding: 16px 32px;
   gap: 10px;
+  transition: box-shadow var(--transition-duration-and-funk);
 }
 
 .button-service:hover,
 .button-service:focus {
-  background-color: var(--color-primary-brand);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  border-radius: 4px;
 }
 
 .button-service:active {
@@ -470,7 +478,7 @@ border-color: var(--color-primary-brand);
   padding-bottom: 120px;
 }
 
-/* footer */
+/* ======= FOOTER ======= */
 
 .foot {
   background-color: var(--color-dark);
@@ -551,9 +559,9 @@ border-color: var(--color-primary-brand);
   width: 264px;
   margin-right: 120px;
 }
+/* ======= /FOOTER ======= */
 
-/* Portfolio */
-
+/* ======== PORTFOLIO ========= */
 .portfolio {
   padding-top: 96px;
   padding-bottom: 120px;
@@ -600,6 +608,7 @@ border-color: var(--color-primary-brand);
 .gallery-card:focus {
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+/* ======== /PORTFOLIO ========= */
 
 /* ========= OVERLAY ========= */
 .overlay {
@@ -614,8 +623,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
   height: 100%;
   overflow: auto;
   transform: translate(0, 100%);
-  transition: transform 500ms linear;
-  /* z-index: 200; */
+  transition: transform 250ms linear;
 }
 
 .photo {
@@ -659,6 +667,7 @@ overflow: hidden;
   width: 528px;
   height: 580px;
   background-color: var(--color-white);
+  transition: opacity var(--transition-duration-and-funk);
 }
 
 .modal-close-btn {
@@ -671,7 +680,7 @@ overflow: hidden;
   width: 24px;
   height: 24px;
   padding: 0;
-  border-radius: 4px;
+  border-radius: 50%;
   cursor: pointer;
   transition: border-color var(--transition-duration-and-funk);
   background: var(--color-accent);
@@ -680,12 +689,11 @@ overflow: hidden;
 
 .modal-close-btn:hover,
 .modal-close-btn:focus {
-  background: var(--color-accent);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  border-radius: 4px;
   border: transparent;
 }
 
 .modal-close-btn-icon {
   transition: fill var(--transition-duration-and-funk);
 }
+/* ========= /MODAL WINDOW ========= */
